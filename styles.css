@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.hero {
+    background-image: url(images/intro1-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar .navbar-brand1{
+    border: solid red !important;
+    display: flex;  
+    justify-content: flex-end !important;  
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 45;
+}
+
+.overlay-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(9, 8, 8, 0.6);
+    /* Background color with opacity */
+    z-index: 1000;
+    /* Ensure the navbar is above the content */
+    /* Add padding to the navbar */
+}
+
+.overlay-nav a {
+    color: #333;
+    /* Link color */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.content {
+    margin-top: 60px;
+    /* Add margin to the top of the content to avoid overlap with navbar */
+    padding: 20px;
+}
+
+.navbar button {
+    background-color: none;
+    z-index: 100 !important;
+    position: relative !important;
+}
+
+.navbar-brand {
+    z-index: 100 !important;
+    position: relative !important;
+}
+
+.navbar-nav {
+    text-align: center;
+    font-size: 40px;
+    z-index: 100 !important;
+    position: relative !important;
+}
+
+.herocontent {
+    color: #eee;
+    z-index: 100;
+    position: relative;
+    text-align: left;
+    padding: 5%;
+}
+
+
+.hero {
+    position: relative;
+    z-index: 60;
+}
+
+section .herotext {
+    margin-top: 150px;
+}
+
+section .cta {
+    margin-bottom: 150px;
+    background-color: #f5df4e;
+    border-radius: 0%;
+    width: 10%;
+    height: 50px;
+}
+
+.aboutme h1 {
+    font-size: 40px;
+}
+
+.aboutme2 span {
+    text-decoration: underline #f5df4e;
+}
+
+.aboutme2 p {
+    line-height: 40px;
+    font-size: 21px;
+}
+
+.aboutme3 h1 {
+    font-size: 150px;
+    float: inline-start;
+}
+
+.aboutme3 .fa {
+    color: #f5df4e;
+    font-size: 150px;
+}
+
+.aboutme4 h6 {
+    margin-top: 0%;
+    margin-bottom: 50px;
+}
+
+.aboutme5 p {
+    color: #6c757d;
+}
+
+.all {
+    background-color: #f5df4e;
+}
+
+.project {
+    margin-top: 100px;
+}
+
+.card {
+    border: none;
+}
+
+.card span {
+    color: #f5df4e;
+    font-size: 50px;
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 19px;
+    line-height: 30px;
+    color: #6c757d !important;
+}
+
+.vertical {
+    border-left: 2px solid #f5df4e;
+    height: 470px;
+}
+
+.resume h2 {
+    margin-top: 100px;
+}
+
+.resume p {
+    color: #6c757d !important;
+}
+
+.progressbar {
+    background-color: #f5df4e;
+    width: 65%;
+}
+
+.progressbarone {
+    background-color: #f5df4e;
+    width: 95%;
+}
+
+.progress {
+    height: 10px;
+}
+
+.progressbartwo {
+    background-color: #f5df4e;
+    width: 80%;
+}
+
+.progressbarthree {
+    background-color: #f5df4e;
+    width: 70%;
+}
+
+.progressbarfour {
+    background-color: #f5df4e;
+    width: 60%;
+}
+
+.progressbarfive {
+    background-color: #f5df4e;
+    width: 99%;
+}
+
+.cv span {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 1px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    width: 15%;
+    height: 50px;
+    font-weight: bold;
+}
+
+.cv span:hover {
+    background-color: black;
+    color: white;
+}
+
+details {
+    display: block;
+}
+
+.hire {
+    background-image: url(images/intro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay3 {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 45;
+}
+
+.hirecontent {
+    color: #eee;
+    z-index: 100;
+    position: relative;
+    text-align: left;
+    padding: 5%;
+}
+
+.getintouch{
+    background-color: #f5df4e;
+}
+
+.underline-input {
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0; 
+    padding: 0; 
+    background-color: transparent;
+    background: transparent;
+}
+
+.getintouch .getext{
+    font-size: 20px;
+    line-height: 40px;
+}
+.footer{
+    padding: 50px;
+}
+.footer p {
+    color: white;
+    
+}
+.foot p{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.herotext h2{
+    font-size: 200px;
+}
+
+.testimonial{
+    background-color: #939597 !important;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.testimonial p{
+    color: white !important;
+    text-align: center;
+    font-size: 21px;
+    padding: 40px;
+    
+}
+
+
+.carousel-inner {
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download File Example</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h3>My Details</h3>
+        <button class="btn btn-primary" id="viewDetailsButton">View My Details</button>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // URL to your uploaded file
+            var fileUrl = 'path/to/your/file.pdf'; // Replace with the actual file URL
+
+            // Handle the "View My Details" button click event
+            $("#viewDetailsButton").click(function () {
+                // Create a hidden anchor element to trigger the file download
+                var downloadLink = document.createElement('a');
+                downloadLink.href = fileUrl;
+                downloadLink.download = 'my_details.pdf'; // Replace with the desired file name
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+            });
+        });
+    </script>
+</body>
+</html>

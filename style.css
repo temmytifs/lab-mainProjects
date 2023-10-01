@@ -1,0 +1,19 @@
+
+        /* Add your custom styles here */
+        .testimonial{
+            /* background-color:yellow; */
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: black !important;
+        }
+
+        .carousel-inner {
+            text-align: center;
+        }
+
+        .carousel-inner p{
+            /* color:yellow !important; */
+        }
+
+  
