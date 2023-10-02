@@ -11,7 +11,6 @@
 }
 
 .navbar .navbar-brand1{
-    border: solid red !important;
     display: flex;  
     justify-content: flex-end !important;  
 }
@@ -277,7 +276,7 @@ details {
 }
 
 .herotext h2{
-    font-size: 200px;
+    font-size: 90px;
 }
 
 .testimonial{
@@ -300,3 +299,12 @@ details {
 .carousel-inner {
     text-align: center;
 }
+
+.animate__heartBeat {
+    animation-duration: 2s;
+}
+/* Custom CSS */
+.animate__fadeInUp {
+    animation-duration: 2s;
+}
+
