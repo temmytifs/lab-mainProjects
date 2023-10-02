@@ -17,23 +17,28 @@
 
 <body>
     <section class="container-fluid hero">
-        <nav class="navbar  navbar-light overlay-nav">
+        <nav class="navbar navbar-light overlay-nav">
             <div class="container-fluid bg-dark">
                 <a class="navbar-brand text-light fw-bold" href="#">CALLUM</a>
-                <a class="navbar-brand1 text-light fw-bold">(060) 444 434 444</a>
-                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon text-light"></span>
-                </button>
-
+                <div class="move">
+                    <div class="newa">
+                        <a class="navbar-brand text-light fw-bold">(060) 444 434 444</a>
+                    </div>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-light"></span>
+                    </button>
+                </div>
                 <!-- Navigation Links -->
                 <div class="collapse navbar-collapse overlay-nav" id="navbarNav">
                     <ul class="navbar-nav">
-                        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true"
                             aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon text-dark">X</span>
+                            <span class="navbar-toggler-icon text-light">
+                                <i class="fas fa-times"></i>
+                            </span>
                         </button>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#">Home</a>
@@ -103,18 +108,21 @@
                         exceptional results while working with me. Delivering work within time and budget which meets
                         client’s requirements is our moto.</p>
                 </div>
-                <div class="col-md-4 text-center aboutme3 mt-5">
-                    <h1>22<span class="fa fa-circle"></span></h1>
-
-                    <h3>Years of<span class="fw-bold"> Experiance</span></h3>
+                <div class="col-md-4 parent text-center mt-5">
+                    <div class="fa fa-circle"></div>
+                        <div id="text-over-icon">
+                            <h1>22</h1>
+                        </div>
+                    <h3 class="mt-3">Years of<span class="fw-bold"> Experiance</span></h3>
                 </div>
+            
             </div>
             <div class="row mt-5 mb-5 aboutme5">
-                <div class="col-sm-3 col-md-3 ">
+                <div class="col-sm-1 col-md-3 ">
                     <p>Name:</p>
                     <h6 class="fw-bold animate__animated animate__fadeInUp">Callum Smith</h6>
                 </div>
-                <div class="col-sm-3 col-md-3">
+                <div class="col-sm-1 col-md-3">
                     <p>Email:</p>
                     <h6 class="fw-bold animate__animated animate__fadeInUp">chat@callum.com</h6>
                 </div>
@@ -238,11 +246,11 @@
 
                             </div>
                         </div>
-                        <div class="row mt-4 ms-2 mb-5 animate__animated animate__fadeInUp">
+                        <div class="row  end mt-4 ms-2 animate__animated animate__fadeInUp">
                             <div class="col-md-12">
                                 <h4>International Science</h4>
                                 <h6>Harvard University / 2013 - 2014</h6>
-                                <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                                     industry. Lorem
                                     Ipsum has been the dummy text.</p>
                                 <hr>
@@ -273,11 +281,11 @@
                                 <hr>
                             </div>
                         </div>
-                        <div class="row mt-4 ms-2">
+                        <div class="row end mt-4 ms-2">
                             <div class="col-md-12">
                                 <h4>HTML Developer</h4>
                                 <h6>Adobe Inc / 2017 - 2018</h6>
-                                <p class="mb-4">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea
+                                <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea
                                     essent possim iriure.</p>
                                 <hr>
                             </div>
@@ -720,7 +728,7 @@
             <div class="row mt-5 text-center">
                 <div class="col-md-12">
                     <h1>Interested in working with me?</h1>
-                    <span class="all">Hire me</span>
+                    <span class="all text-dark">Hire me</span>
                 </div>
             </div>
         </section>
@@ -739,7 +747,7 @@
                                 <h6>What is Callum</h6>
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent

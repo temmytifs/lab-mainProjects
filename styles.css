@@ -10,9 +10,10 @@
     position: relative;
 }
 
-.navbar .navbar-brand1{
-    display: flex;  
-    justify-content: flex-end !important;  
+.navbar .container-fluid .move {
+    width: 80%;
+    display: flex;
+    justify-content: end;
 }
 
 .overlay {
@@ -30,16 +31,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(9, 8, 8, 0.6);
-    /* Background color with opacity */
+    background-color: rgba(9, 8, 8, 0.9);
     z-index: 1000;
-    /* Ensure the navbar is above the content */
-    /* Add padding to the navbar */
 }
 
 .overlay-nav a {
     color: #333;
-    /* Link color */
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
@@ -47,7 +44,6 @@
 
 .content {
     margin-top: 60px;
-    /* Add margin to the top of the content to avoid overlap with navbar */
     padding: 20px;
 }
 
@@ -64,9 +60,15 @@
 
 .navbar-nav {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
+    /* line-height: 25% !important; */
     z-index: 100 !important;
     position: relative !important;
+}
+
+.navbar-nav a {
+    margin-top: 50px;
+    line-height: 5px;
 }
 
 .herocontent {
@@ -86,12 +88,15 @@
 section .herotext {
     margin-top: 150px;
 }
+#typewriter{
+    font-size: 50px;
+}
 
 section .cta {
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
     background-color: #f5df4e;
     border-radius: 0%;
-    width: 10%;
+    min-width: 15%;
     height: 50px;
 }
 
@@ -116,6 +121,31 @@ section .cta {
 .aboutme3 .fa {
     color: #f5df4e;
     font-size: 150px;
+}
+
+.parent {
+    position: relative;
+}
+
+.fa.fa.fa-circle {
+    color: #f5df4e;
+}
+
+.fa.fa-circle:before {
+    font-size: 120px;
+}
+
+#text-over-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#text-over-icon h1 {
+    margin-top: 0%;
+    margin-left: 150px;
+    font-size: 120px;
+
 }
 
 .aboutme4 h6 {
@@ -157,7 +187,7 @@ section .cta {
 
 .vertical {
     border-left: 2px solid #f5df4e;
-    height: 470px;
+    height: 480px;
 }
 
 .resume h2 {
@@ -167,6 +197,11 @@ section .cta {
 .resume p {
     color: #6c757d !important;
 }
+.resume .end{
+    border: solid red;
+    margin-bottom: 100% !important ;
+}
+
 
 .progressbar {
     background-color: #f5df4e;
@@ -207,7 +242,7 @@ section .cta {
     border-radius: 1px;
     margin-top: 50px;
     margin-bottom: 150px;
-    width: 15%;
+    min-width: 15%;
     height: 50px;
     font-weight: bold;
 }
@@ -226,6 +261,7 @@ details {
     background-position: center;
     background-size: cover;
     position: relative;
+    height: 500px;
 }
 
 .overlay3 {
@@ -246,53 +282,55 @@ details {
     padding: 5%;
 }
 
-.getintouch{
+.getintouch {
     background-color: #f5df4e;
 }
 
 .underline-input {
     border: none;
     border-bottom: 1px solid #000;
-    border-radius: 0; 
-    padding: 0; 
+    border-radius: 0;
+    padding: 0;
     background-color: transparent;
     background: transparent;
 }
 
-.getintouch .getext{
+.getintouch .getext {
     font-size: 20px;
     line-height: 40px;
 }
-.footer{
+
+.footer {
     padding: 50px;
 }
+
 .footer p {
     color: white;
-    
+
 }
-.foot p{
+
+.foot p {
     display: flex;
     justify-content: flex-end;
 }
 
-.herotext h2{
+.herotext h2 {
     font-size: 90px;
 }
 
-.testimonial{
+.testimonial {
     background-color: #939597 !important;
-    padding: 40px;
     border-radius: 5px;
     text-align: center;
-    margin-top: 100px;
+    min-height: 150px;
 }
 
-.testimonial p{
+.testimonial p {
     color: white !important;
     text-align: center;
     font-size: 21px;
-    padding: 40px;
-    
+    margin: 0%, auto;
+
 }
 
 
@@ -303,8 +341,8 @@ details {
 .animate__heartBeat {
     animation-duration: 2s;
 }
+
 /* Custom CSS */
 .animate__fadeInUp {
     animation-duration: 2s;
 }
-
