@@ -144,6 +144,7 @@ section .cta {
 #text-over-icon h1 {
     margin-top: 0%;
     margin-left: 150px;
+    margin-right: 150px;
     font-size: 120px;
 
 }
@@ -197,10 +198,7 @@ section .cta {
 .resume p {
     color: #6c757d !important;
 }
-.resume .end{
-    border: solid red;
-    margin-bottom: 100% !important ;
-}
+
 
 
 .progressbar {
@@ -322,21 +320,19 @@ details {
     background-color: #939597 !important;
     border-radius: 5px;
     text-align: center;
-    min-height: 150px;
+    min-height: 400px;
 }
 
 .testimonial p {
     color: white !important;
     text-align: center;
     font-size: 21px;
-    margin: 0%, auto;
+    margin-top: 50px;
 
 }
 
 
-.carousel-inner {
-    text-align: center;
-}
+
 
 .animate__heartBeat {
     animation-duration: 2s;
