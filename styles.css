@@ -11,7 +11,7 @@
 }
 
 .navbar .container-fluid .move {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: end;
 }
@@ -61,7 +61,6 @@
 .navbar-nav {
     text-align: center;
     font-size: 30px;
-    /* line-height: 25% !important; */
     z-index: 100 !important;
     position: relative !important;
 }
@@ -331,14 +330,9 @@ details {
 
 }
 
-
-
-
 .animate__heartBeat {
     animation-duration: 2s;
 }
-
-/* Custom CSS */
 .animate__fadeInUp {
     animation-duration: 2s;
 }
