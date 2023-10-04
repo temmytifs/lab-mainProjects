@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <style>
+            /* side navigation settings */
+            .sidenav {
+                width: 95px;
+                height: 100%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: white;
+                overflow-x: hidden;
+                transition: 0.5s;
+                overflow: hidden;
+            }
+
+            .sidenav a {
+                text-decoration: none;
+                text-align: center;
+                font-size: 15px;
+                color: black;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+            .nav1 {
+                border: solid #f1f1f1;
+                padding: 10px 0;
+            }
+
+            .nav1 span {
+                margin-left: 35%;
+                margin-bottom: 8px;
+            }
+
+            .topper {
+                margin-top: 10px;
+            }
+
+            .toggle-btn {
+                display: none;
+            }
+
+            @media screen and (max-width: 600px) {
+                .sidenav {
+                    width: 0;
+                }
+
+                .toggle-btn {
+                    display: block;
+                    position: fixed;
+                    z-index: 2;
+                    top: 10px;
+                    left: 10px;
+                    background-color: #de8b2d;
+                    width: 10%;
+                    float: left;
+                }
+            }
+        </style>
+        <section class="container-fluid hero">
+            <nav class="navbar navbar-light overlay-nav">
+                <div class="container">
+                    <a class="navbar-brand text-light fw-bold" href="#">TEMMYRITE</a>
+
+                    <a class="navbar-brand text-light fw-bold">(+234) 813 054 4588</a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-light"></span>
+                    </button>
+
+                    <!-- Navigation Links -->
+                    <div class="collapse navbar-collapse overlay-nav" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon text-light">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </button>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#about">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#What-I-Do">What I Do</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#Resume">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#Portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#FAQ">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#Client Speak">Client Speak</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#Contact Me">Contact Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="fa fa-twitter"></span>
+                                <span class="fa fa-instagram"></span>
+                                <span class="fa fa-linkedin"></span>
+                                <span class="fa fa-pinterest"></span>
+                            </li>
+                        </ul>
+                        <span class="fa fa-twitter fa fa-facebook fa fa-instagram"></span>
+                    </div>
+                </div>
+            </nav>
+            <div class="overlay"></div>
+            <section class="container herocontent content">
+                <div class="row">
+                    <div class="col-md-12 text-center herotext">
+                        <h1>Hi, I'm a Freelancer</h1>
+
+                        <div class="col-sm-12 col-md-12 text-center">
+                            <h2 id="typewriter"></h2>
+                        </div>
+
+                        <p>based in Lagos, Nigeria.</p>
+                        <div class="col-md-12">
+                            <a href="#Portfolio" class="btn cta">
+                                <p>view my work</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 button-container">
+                        <a href="#about">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </header>
+
+    <div class="sidenav">
+        <div class="name">
+            <span>Timothy</span>
+        </div>
+        <div class="nav1 topper">
+            <span class="fa fa-home fa-2x"></span>
+            <a href="#HOME" onclick="hide ()">HOME</a>
+        </div>
+        <div class="nav1">
+            <span class="fa fa-id-card-o fa-2x"></span>
+            <a href="#ABOUT" onclick="hide ()">ABOUT ME</a>
+        </div>
+        <div class="nav1">
+            <span class="fa  fa-list-ul fa-2x"></span>
+            <a href="#SERVICES" onclick="hide ()">SERVICES</a>
+        </div>
+        <div class="nav1">
+            <span class="fa fa-database fa-2x"></span>
+            <a href="#PORTFOLIO" onclick="hide ()">PORTFOLIO</a>
+        </div>
+        <div class="nav1">
+            <span class="fa fa-weixin fa-2x"></span>
+            <a href="#BLOG" onclick="hide ()">BLOG</a>
+        </div>
+        <div class="nav1">
+            <span class="fa  fa-user-plus fa-2x"></span>
+            <a href="#CONTACT" onclick="hide ()">CONTACT</a>
+        </div>
+    </div>
+    <button class="toggle-btn" onclick="toggleNav()"><span class="fa  fa-bars fa-2x"></span></button>
+
+    <script>
+        var sidenav = document.querySelector('.sidenav');
+  var togBtn = document.querySelector(".toggle-btn");
+
+function toggleNav() {
+  if (sidenav.style.width === '0px' || sidenav.style.width === '') {
+    sidenav.style.display = "block"
+      sidenav.style.width = '95px';
+      togBtn.style.marginLeft = '95px';
+  } else {
+      sidenav.style.width = '0px';
+      togBtn.style.marginLeft = '0px';
+  }
+}
+
+ function hide () {
+  sidenav.style.display = "none";
+  togBtn.style.marginLeft = "0px"
+}
+    </script>
+</body>
+
+
+</html>
