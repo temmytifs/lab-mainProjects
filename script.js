@@ -1,6 +1,6 @@
 
 
-const words = ["DEVLOPER", "DEGSINER", "CALLIUM"];
+const words = ["DEVELOPER", "DESIGNER", "TEMMYRITE"];
         const typewriterElement = $("#typewriter");
 
         function typeWriter(text, i, callback) {
@@ -30,4 +30,8 @@ const words = ["DEVLOPER", "DEGSINER", "CALLIUM"];
       $(document).ready(function() {
           cycleWords(words);
       });
+
+
+      
+
 
